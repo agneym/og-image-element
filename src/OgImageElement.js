@@ -17,6 +17,7 @@ export class OgImageElement extends LitElement {
         flex-direction: column;
         height: 100%;
         padding: 0 8rem;
+        text-align: center;
       }
       h1 {
         font-weight: 400;
