@@ -1,7 +1,7 @@
 {
-  "name": "og-image-element",
-  "version": "0.0.0",
-  "description": "Webcomponent og-image-element following open-wc recommendations",
+  "name": "@agney/og-image-element",
+  "version": "0.0.1",
+  "description": "Webcomponent og-image-element for generating Open Graph Images",
   "author": "og-image-element",
   "license": "MIT",
   "main": "index.js",
@@ -24,7 +24,8 @@
     "test:bs": "karma start karma.bs.config.js --compatibility all --coverage",
     "site:build": "npm run storybook:build",
     "storybook": "start-storybook -p 9001",
-    "storybook:build": "build-storybook -o _site -s storybook-static"
+    "storybook:build": "build-storybook -o _site -s storybook-static",
+    "release": "npm publish --access=public"
   },
   "dependencies": {
     "lit-html": "^1.0.0",
@@ -61,5 +62,9 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BoyWithSilverWings/og-image-element"
   }
 }

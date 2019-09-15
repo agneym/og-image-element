@@ -21,17 +21,12 @@ npm i og-image-element
 npm run test
 ```
 
-## Testing using karma via browserstack (if applied by author)
-```bash
-npm run test:bs
-```
-
 ## Demoing using storybook (if applied by author)
 ```bash
 npm run storybook
 ```
 
-## Linting (if applied by author)
+## Linting
 ```bash
 npm run lint
 ```
