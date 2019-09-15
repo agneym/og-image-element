@@ -5,7 +5,33 @@ export class OgImageElement extends LitElement {
     return css`
       :host {
         display: block;
-        padding: 25px;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--background-color, #ffffff);
+        color: var(--font-color, #000000);
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 8rem;
+      }
+      h1 {
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 4rem;
+        font-family: var(--heading-font, serif);
+      }
+      p {
+        font-size: 1rem;
+      }
+      .image-container {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 15%;
+        text-align: center;
       }
     `;
   }
@@ -13,24 +39,26 @@ export class OgImageElement extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      counter: { type: Number },
+      subtitle: { type: String },
     };
   }
 
   constructor() {
     super();
-    this.title = 'Hey there';
-    this.counter = 5;
-  }
-
-  __increment() {
-    this.counter += 1;
+    this.title = '';
   }
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <main>
+        <div class="image-container">
+          <slot name="image"></slot>
+        </div>
+        <h1>
+          <slot name="title"></slot>
+        </h1>
+        <p>${this.subtitle}</p>
+      </main>
     `;
   }
 }

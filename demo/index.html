@@ -2,9 +2,14 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Aleo|Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #fafafa;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+    og-image-element {
+      --heading-font: 'Aleo', serif;
     }
   </style>
 </head>
@@ -15,11 +20,13 @@
     import { html, render } from 'lit-html';
     import '../og-image-element.js';
 
-    const title = 'Hello owc World!';
+    const title = 'NextJS on Elastic Beanstalk with Circle CI';
+    const subtitle = "Automate all Things!";
     render(
       html`
-        <og-image-element .title=${title}>
-          some more light-dom
+        <og-image-element .subtitle=${subtitle}>
+          <img slot="image" src="./programmer.svg" height="100%" />
+          <div slot="title">${title}</div>
         </og-image-element>
       `,
       document.querySelector('#demo')
