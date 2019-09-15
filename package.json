@@ -1,11 +1,11 @@
 {
   "name": "@agney/og-image-element",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webcomponent og-image-element for generating Open Graph Images",
-  "author": "og-image-element",
+  "author": "Agney Menon <agney@outlook.in>",
   "license": "MIT",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/og-image-element.js",
+  "module": "dist/og-image-element.js",
   "scripts": {
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch",
@@ -25,24 +25,29 @@
     "site:build": "npm run storybook:build",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o _site -s storybook-static",
-    "release": "npm publish --access=public"
+    "release": "npm publish --access=public",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "es-dev-server --app-index dist/index.html --open"
   },
   "dependencies": {
     "lit-html": "^1.0.0",
     "lit-element": "^2.0.1"
   },
   "devDependencies": {
-    "es-dev-server": "^1.5.0",
-    "eslint": "^6.1.0",
+    "@open-wc/building-rollup": "^0.9.29",
+    "@open-wc/demoing-storybook": "^0.3.0",
     "@open-wc/eslint-config": "^1.0.0",
     "@open-wc/prettier-config": "^0.1.10",
+    "@open-wc/testing": "^2.0.0",
+    "@open-wc/testing-karma": "^3.0.0",
+    "@open-wc/testing-karma-bs": "^1.0.0",
+    "es-dev-server": "^1.18.0",
+    "eslint": "^6.1.0",
     "husky": "^1.0.0",
     "lint-staged": "^8.0.0",
-    "@open-wc/testing-karma": "^3.0.0",
-    "webpack-merge": "^4.1.5",
-    "@open-wc/testing-karma-bs": "^1.0.0",
-    "@open-wc/testing": "^2.0.0",
-    "@open-wc/demoing-storybook": "^0.3.0"
+    "rimraf": "^3.0.0",
+    "rollup": "^1.21.3",
+    "webpack-merge": "^4.1.5"
   },
   "eslintConfig": {
     "extends": [
