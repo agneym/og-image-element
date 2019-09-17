@@ -9,6 +9,7 @@ export class OgImageElement extends LitElement {
         width: 100vw;
         background: var(--background, #ffffff);
         color: var(--font-color, #000000);
+        font-size: var(--font-size, 100%);
       }
       main {
         display: flex;
@@ -22,11 +23,11 @@ export class OgImageElement extends LitElement {
       h1 {
         font-weight: 400;
         letter-spacing: 0.1rem;
-        font-size: 4rem;
+        font-size: 4em;
         font-family: var(--heading-font, serif);
       }
       p {
-        font-size: 1rem;
+        font-size: 1em;
       }
       .image-container {
         margin-bottom: 1rem;
