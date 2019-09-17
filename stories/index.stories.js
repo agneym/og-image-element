@@ -9,6 +9,8 @@ storiesOf('og-image-element', module)
   .add(
     'Alternative Title',
     () => html`
-      <og-image-element .title=${'Something else'}></og-image-element>
+      <og-image-element>
+        <div slot="title">This is the title for the Post</div>
+      </og-image-element>
     `,
   );

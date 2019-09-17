@@ -7,7 +7,7 @@ export class OgImageElement extends LitElement {
         display: block;
         height: 100vh;
         width: 100vw;
-        background-color: var(--background-color, #ffffff);
+        background: var(--background, #ffffff);
         color: var(--font-color, #000000);
       }
       main {
