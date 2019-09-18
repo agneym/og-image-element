@@ -1,6 +1,6 @@
 {
   "name": "@agney/og-image-element",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Webcomponent og-image-element for generating Open Graph Images",
   "author": "Agney Menon <agney@outlook.in>",
   "license": "MIT",
