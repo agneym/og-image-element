@@ -40,14 +40,13 @@ export class OgImageElement extends LitElement {
 
   static get properties() {
     return {
-      title: { type: String },
       subtitle: { type: String },
     };
   }
 
   constructor() {
     super();
-    this.title = '';
+    this.subtitle = '';
   }
 
   render() {
