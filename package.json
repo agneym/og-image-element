@@ -1,6 +1,6 @@
 {
   "name": "@agney/og-image-element",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Webcomponent og-image-element for generating Open Graph Images",
   "author": "Agney Menon <agney@outlook.in>",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "site:build": "npm run storybook:build",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o _site -s storybook-static",
-    "release": "npm publish --access=public",
+    "release": "npm run build && npm publish --access=public",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "start:build": "es-dev-server --app-index dist/index.html --open"
   },
