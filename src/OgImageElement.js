@@ -7,9 +7,6 @@ export class OgImageElement extends LitElement {
         display: block;
         height: 100vh;
         width: 100vw;
-        background: var(--background, #ffffff);
-        color: var(--fontColor, #000000);
-        font-size: var(--fontSize, 100%);
       }
       main {
         display: flex;
@@ -19,6 +16,9 @@ export class OgImageElement extends LitElement {
         height: 100%;
         padding: 0 8rem;
         text-align: center;
+        background: var(--background, #ffffff);
+        color: var(--fontColor, #000000);
+        font-size: var(--fontSize, 100%);
       }
       h1 {
         font-weight: 400;
@@ -27,7 +27,7 @@ export class OgImageElement extends LitElement {
         font-family: var(--headingFont, serif);
       }
       p {
-        font-size: 1em;
+        font-size: 1.5em;
       }
       .image-container {
         margin-bottom: 1rem;
