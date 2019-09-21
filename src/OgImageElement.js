@@ -25,12 +25,13 @@ export class OgImageElement extends LitElement {
         letter-spacing: 0.1rem;
         font-size: 4em;
         font-family: var(--headingFont, serif);
+        margin: 0;
       }
       p {
         font-size: 1.5em;
       }
       .image-container {
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
         width: 100%;
         height: 15%;
         text-align: center;
