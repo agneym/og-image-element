@@ -44,7 +44,7 @@
     "es-dev-server": "^1.18.0",
     "eslint": "^6.1.0",
     "husky": "^1.0.0",
-    "lint-staged": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "rimraf": "^3.0.0",
     "rollup": "^1.21.3",
     "webpack-merge": "^4.1.5"
